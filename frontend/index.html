@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>视频分享平台</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">视频分享社区</div>
+    <nav>
+      <button data-view="home">首页</button>
+      <button data-view="submit">投稿</button>
+      <button data-view="login">登录</button>
+      <button data-view="register">注册</button>
+      <button data-view="admin">管理</button>
+      <button id="logoutBtn" class="hidden">登出</button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <section id="message" class="message hidden"></section>
+    <section id="content"></section>
+  </main>
+
+  <footer class="site-footer">© 2026 视频分享平台</footer>
+  <script src="app.js"></script>
+</body>
+</html>

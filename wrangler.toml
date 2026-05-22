@@ -1,0 +1,25 @@
+name = "cfworker-video-share"
+main = "worker/src/index.js"
+compatibility_date = "2025-07-18"
+
+[build]
+command = "npm install"
+
+[site]
+bucket = "./frontend"
+
+[[kv_namespaces]]
+binding = "DATA"
+id = ""
+preview_id = ""
+
+[vars]
+PUBLIC_BASE_URL = "https://yourdomain.com"
+PUBLIC_ORIGINS = "http://127.0.0.1:8787"
+EMAIL_FROM = ""
+RESEND_API_KEY = ""
+ADMIN_EMAIL = "admin@example.com"
+ADMIN_PASSWORD = "12345678"
+
+[triggers]
+  crons = []
